@@ -1,0 +1,42 @@
+body {
+  font-family: "Oswald", sans-serif;
+  /* display: flex; */
+  min-height: 100vh;
+  /* flex-direction: row; */
+}
+
+.card {
+  flex-flow: wrap;
+  float: left;
+  flex: auto;
+}
+
+.card-content {
+  text-align: center;
+  font-weight: bold;
+}
+
+.center-cols > .col {
+  float: none;
+  display: inline-block;
+}
+
+#t1 {
+  font-weight: bold;
+  text-align: center;
+}
+
+p2 {
+  text-align: center;
+  font-size: 24px;
+}
+#hdsht {
+  margin-bottom: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.brand-logo {
+    margin-left: 20px;
+}

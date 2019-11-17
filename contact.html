@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styling.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper deep-purple darken-1">
+        <a href="#" class="brand-logo"><i class="material-icons">stars</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- <form role="form">
+      <div class="form-group row">
+        <label for="name-input">Name:</label>
+        <input class="form-control" id="name-input" type="text" />
+      </div>
+      <div class="form-group row">
+        <label for="email-input">Email:</label>
+        <input class="form-control" id="email-input" type="email" />
+      </div>
+      <div class="form-group row">
+        <label for="age-input">Age:</label>
+        <input class="form-control" id="age-input" type="number" />
+      </div>
+      <div class="form-group row">
+        <label for="comment-input">Comments</label>
+        <textarea class="form-control" id="comment-input"></textarea>
+      </div>
+      <button class="btn btn-default" id="add-user" type="submit">
+        Submit
+      </button>
+    </form> -->
+
+  <div class="row">
+    <form class="col s12">
+      <div class="row form">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input placeholder="Name" value="John" id="name" type="text" class="active validate" required />
+          <label for="name">Full Name</label>
+        </div>
+
+        <div class="input-field col s6">
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Password" class="validate" required />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">local_post_office</i>
+          <input placeholder="Email" id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="address" class="materialize-textarea"></textarea>
+          <label for="address">Address</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">chat_bubble</i>
+          <input placeholder="Comments" id="comments" type="text"/>
+          <label for="comments">Comments</label>
+        </div> 
+      </div>
+</form>
+</div>
+
+
+</body>
+
+</html>
